@@ -13,15 +13,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.x'  # Replace with your Python version
-
-      - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
-
       - name: Move main_website to root
         run: |
           mv main_website/* .
