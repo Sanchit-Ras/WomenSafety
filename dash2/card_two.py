@@ -12,7 +12,7 @@ high_risk = data[data["Predicted Change in Crime Pct 2014-2015"] > 0]
 top_10 = high_risk.nlargest(10, "Predicted Change in Crime Pct 2014-2015")
 
 # Initialize Flask app
-server = Flask(__name__, template_folder=os.path.abspath("../main_website"), static_folder=".")
+server = Flask(__name__, template_folder=os.path.abspath("../main_website"), static_folder="../main_website")
 
 
 @server.route('/<path:filename>')
