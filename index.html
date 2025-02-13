@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Mapping Women's Safety</title>
+</head>
+<body class="bg-white">
+
+    <!-- Header -->
+    <header class="bg-[#f7496f] text-white py-6">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold mb-2 p-2">Mapping Women's Safety</h1>
+            <p class="text-medium">Data-Driven Insights for Safer Communities</p>
+        </div>
+    </header>
+    
+    <!-- Navigation bar -->
+    <nav class="bg-pink-400 py-3">
+        <div class="container mx-auto">
+            <ul class="flex justify-between items-center">
+                <li><a href="#home" class="text-white">Home</a></li>
+                <li><a href="#analysis" class="text-white ">Analysis</a></li>
+                <li><a href="#maps" class="text-white">Maps</a></li>
+                <li><a href="#about" class="text-white">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <div id="home" class=" py-6 px-6 w-full bg-gradient-to-r from-pink-100 via-rose-200 to-pink-100  p-6">
+        <div class="bg-gradient-to-r from-pink-100 via-rose-200 to-pink-100  p-6">
+            <h2 class="text-3xl text-gray-800 font-bold mb-4 text-center bg-gradient-to-r from-green-200 via-green-300 to-green-200 py-3 border border-green-300 shadow-sm rounded-lg">
+                Welcome to Mapping Women's Safety
+            </h2>
+            <p class="text-md leading-relaxed font-medium text-center">
+                Explore our data-driven analysis of </p>
+            <p class="text-md leading-relaxed font-medium text-center mb-6">
+                crime trends and predict future safety zones.
+            </p>
+            
+            <div class="flex justify-center w-full">  
+                <div class="relative w-1/2 rounded-lg overflow-hidden shadow-lg">  
+                    <img 
+                        src="Hero_img.png"
+                        alt="Women's Safety Analysis"
+                        class="object-cover w-full h-full" >
+                </div>
+            </div>
+            <div class="mt-6 text-center">
+                <button class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg shadow-inner">
+                    Explore More
+                </button>
+            </div>
+        </div>
+    </div>
+    
+     
+    <!-- Analysis Section -->
+    <div id="analysis" class="container mx-auto py-12 px-6 mb-10">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Key Insights</h2>
+        <div class="relative">
+            <!-- Card Wrapper -->
+            <div id="card-container" class="relative h-[650px] overflow-hidden">
+                <!-- Card 1 -->
+                <div
+                    id="card-1"
+                    class="card-content rounded-lg shadow-lg p-6 text-center absolute inset-0 transition-transform transition-opacity duration-[1200ms] transform opacity-100 translate-y-0 z-10 bg-gradient-to-r from-pink-300 to-[#FF5A7D] py-2"
+                >
+                    <h3 class="text-xl font-bold text-white mb-4 text-center">Crime Trends (2001-2014)</h3>
+    
+                    <!-- Flex container for paragraph and iframe -->
+                    <div class="flex flex-col md:flex-row gap-6 items-start">
+                        <!-- Insights Section -->
+                        <div class="rounded-md shadow-sm p-6 w-full md:w-2/5 border-t-4 border-[#FF5A7D] transition-transform duration-[1200ms]">
+                            <h4 class="text-white font-bold leading-relaxed mb-1">Analysis</h4>
+                            <p class="text-white font-medium leading-relaxed">
+                                The analysis highlights a notable surge in reported crimes against women in 2013 compared to 2012.
+                                This rise coincides with the aftermath of the infamous <strong>Delhi gang rape case (December 2012)</strong>
+                                —widely known as the Nirbhaya case. The incident triggered nationwide protests, leading to significant societal and legal transformations.
+                                <br /><br />
+                                In response, the <strong>Criminal Law (Amendment) Act of 2013</strong> was enacted, introducing stricter penalties for crimes against women.
+                                Increased media attention raised awareness about women's rights, encouraging more women to report offenses.
+                                <br /><br />
+                                While the data reflects an apparent surge in crimes, much of it can be attributed to improved reporting mechanisms rather than an actual increase in offenses.
+                                Such insights highlight the importance of platforms like this website to further promote awareness and action for women's safety.
+                            </p>
+                        </div>
+    
+                        <!-- Interactive Chart Section -->
+                        <div class="rounded-md shadow-sm w-full md:w-3/5 transition-transform duration-[1200ms]">
+                            <iframe
+                                src="http://127.0.0.1:5000/dash1/"
+                                width="100%"
+                                height="500px"
+                                style="border: none;"
+                                class="rounded-md"
+                            ></iframe>
+                            <p class="text-white font-medium mt-4 text-center">Click on a year to see district-level data.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 2 -->
+                <div
+                    id="card-2"
+                    class="card-content rounded-lg shadow-lg p-6 text-center absolute inset-0 transition-transform transition-opacity duration-[1200ms] transform opacity-0 translate-y-full scale-95 z-0 bg-gradient-to-r from-pink-300 to-[#FF5A7D] py-2"
+                >
+                    <h3 class="text-xl font-bold text-white mb-4 text-center">Predictions for 2015</h3>
+    
+                    <!-- Flex container for paragraph and chart -->
+                    <div class="flex flex-col md:flex-row gap-6 items-start">
+                        <!-- Insights Section -->
+                        <div class="rounded-md shadow-sm p-4 w-full md:w-2/5 border-t-4 border-[#FF5A7D] transition-transform duration-[1200ms]">
+                            <h4 class="text-white font-bold leading-relaxed mb-1">Analysis</h4>
+                            <p class="text-white font-medium leading-relaxed">
+                                States like <strong>Mizoram, Manipur, Odisha, and Jammu & Kashmir</strong> show the highest increase in
+                                crime percentages against women in 2015 compared to 2014. This is attributed to several factors:
+                                <br /><br />
+                                <strong>1. Economic Hardships & Migration:</strong> Rising financial instability leading to unsafe environments.<br />
+                                <strong>2. Conflict & Insurgency:</strong> Regions like J&K and Manipur face safety challenges due to ongoing unrest.<br />
+                                <strong>3. Substance Abuse & Domestic Violence:</strong> Issues prevalent in Northeast states and Odisha.<br /><br />
+                                These statistics reflect a combination of <strong>socio-economic vulnerabilities, conflict, substance abuse, and improved crime reporting</strong>,
+                                rather than purely declining safety.
+                            </p>
+                        </div>
+    
+                        <!-- Interactive Chart Section -->
+                        <div class="rounded-md shadow-md w-full md:w-3/5 transition-transform duration-[1200ms]">
+                            <iframe
+                                src="http://127.0.0.1:5000/dash2/"
+                                width="100%"
+                                height="500px"
+                                style="border: none;"
+                                class="rounded-md"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 3 -->
+                <!-- <div id="card-3" class="card-content rounded-lg shadow-lg p-6 text-center absolute inset-0 transition-all duration-700 transform opacity-0 translate-y-full z-0 bg-gradient-to-r from-pink-300 to-[#FF5A7D]">
+                        <h3 class="text-xl font-bold text-white mb-4">High-Risk Zones</h3>
+                        <p class="text-white font-medium">
+                            Identified zones that require immediate intervention based on predictions.
+                        </p>
+                    </div> -->
+            </div>
+    
+            <!-- Caret Icon -->
+            <div class="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2">
+                <i
+                    id="next-btn"
+                    class="fa-solid fa-caret-down text-gray-600 text-2xl hover:cursor-pointer hover:text-gray-800"
+                ></i>
+            </div>
+        </div>
+    </div>
+       
+
+    <!-- Maps Section -->
+    <div id="maps" class="">
+        <h2 class="text-3xl font-bold text-gray-800 mb-3 text-center">Interactive Maps</h2>
+        <p class="text-gray-600 text-center mb-6">Explore the maps below to see my analysis and predictions.</p>
+        
+        <!-- Map 1 -->
+        <div class="flex justify-center m-4 border-pink-700 border-2 rounded-2xl shadow-lg ">
+    
+            <!-- Why Map -->
+            <div class="bg-pink-200 bg-gradient-to-r from-[#f7496f] to-pink-200 p-4 rounded-l-xl shadow-lg">
+                <h4 class="text-xl font-bold text-white mb-4">Why Use Interactive Maps?</h4>
+                <p class="text-white leading-relaxed ">
+                    I chose interactive maps to display my analysis and predictions because they are <span class="font-semibold">simple and easy to understand</span> for normal people, even those without technical knowledge. 
+                    These maps visually highlight trends and patterns in a way that is <span class="font-semibold">engaging and intuitive</span>, making it easier for users to grasp complex data.<br><br>
+                    For example, the map shows <span class="font-semibold">which districts have experienced an increase in crime</span>, essentially comparing data from the years <span class="font-semibold">2001 and 2014</span>. 
+                    By allowing users to zoom, click, and hover for details, the interactive nature keeps them interested and encourages exploration.<br><br>
+                    This approach helps people become more <span class="font-semibold">aware of their locality</span>, as color-coded zones and markers clearly display high-risk and safer areas at a glance. 
+                    It ensures the information is not only informative but also <span class="font-semibold">memorable and impactful</span>, empowering communities to take action and address safety concerns.
+                </p>
+            </div>
+            
+            <!-- Map -->
+            <div class="w-full">
+                <iframe src="2001_2014_map.html" class="w-full md:w-full h-full"></iframe>
+            </div>
+        
+            <!-- What this Map tells us -->
+            <div id="analysis-section" class="bg-gradient-to-r from-pink-200 to-[#f7496f] p-4 rounded-r-xl shadow-lg">
+                <h4 class="text-xl font-bold text-white mb-2 text-center">Analysis: 2001 vs 2014</h2>
+                <p class="text-white leading-relaxed">
+                    This map reveals a substantial rise in reported <strong>crimes against women</strong> from <strong>2001 to 2014</strong> across numerous districts in India. While this increase might initially seem alarming, it reflects both challenges and progress. The higher crime percentages can partly be attributed to reforms introduced in <strong>2013</strong>, which encouraged more women to report offenses. Districts like <span class="font-semibold">Odisha</span>, <span class="font-semibold">Manipur</span>, and <span class="font-semibold">Jammu & Kashmir</span> highlight unique regional struggles, such as <span class="italic">socio-political unrest</span> and <span class="italic">economic vulnerabilities</span>, further influencing these numbers.
+                    <br><br>
+                    What makes this map important is its ability to simplify complex data into an intuitive visual format, allowing citizens to better understand the safety of their localities. By spotlighting areas with rising crime rates, the map emphasizes the urgent need for targeted interventions. While it showcases the progress in reporting mechanisms, it also reminds us that <strong>crimes against women</strong> remain a critical issue in India, requiring sustained efforts and community-driven initiatives.
+                    <br><br>
+                    This map is not just a reflection of numbers but a call to action, urging policymakers, communities, and individuals to prioritize <strong>women’s safety</strong> and foster an environment where such crimes are not just reported but effectively prevented.
+                </p>
+            </div>
+            
+        </div>
+        
+        <!-- Predictions 2015 -->
+        <div class="flex justify-center m-4 border-pink-700 border-2 rounded-2xl shadow-lg mt-6">
+            <!-- Map -->
+            <div class="w-[50%]  ">
+                <iframe src="2015_predictions_map.html" class="w-full md:full h-full rounded-l-xl shadow-lg"></iframe>
+            </div>
+
+            <!-- What this Map tells us -->
+            <div class="bg-gradient-to-r from-pink-200 to-[#f7496f] w-[50%] rounded-r-xl shadow-lg">
+                <h4 class="text-white text-center text-xl font-bold leading-relaxed py-3">2015 Predictions: Analysis</h4>
+                <p class="text-white leading-relaxed p-3">
+                    This map compares predicted crime percentages for 2015 against 2014. Unlike the earlier analysis 
+                    between 2001 and 2014, where improved reporting mechanisms and societal reforms significantly influenced 
+                    crime data, this map reflects a more stable period. The abundance of green areas suggests that many 
+                    districts are expected to experience little to no increase in crime rates.
+                    <br><br>
+                    However, some districts, such as <strong>Leh Ladakh</strong>, <strong>Jammu and Kashmir</strong>, 
+                    and <strong>Mizoram</strong>, show a notable increase in crime percentages, which highlights the need 
+                    for targeted interventions in these areas. This trend may be driven by localized socio-economic challenges 
+                    and underscores the need for ongoing vigilance and proactive measures.
+                    <br><br>
+                    On the other hand, <strong>Gujarat</strong> emerges as a low-risk region on the map. This observation aligns 
+                    with the NCRB's report highlighting a sharp decline in crimes against women in Gujarat in 2015. Such data emphasize 
+                    the positive impact of focused governance, societal initiatives, and localized reforms. To explore more about this decline, 
+                    you can read the full article 
+                    <a href="https://www.bing.com/ck/a?!&&p=bff90f87fb6dd1e88eb788a6195db6a07dcd4671849c187f4f7444b5963714dbJmltdHM9MTczOTMxODQwMA&ptn=3&ver=2&hsh=4&fclid=0d270565-e1c9-6523-117d-169ee0d96445&psq=gujrat+sharp+decline+in+crime+against+wommen+2015&u=a1aHR0cHM6Ly90aW1lc29maW5kaWEuaW5kaWF0aW1lcy5jb20vY2l0eS9haG1lZGFiYWQvTkNSQi1wdXRzLUd1amFyYXQtYW1vbmctdGhlLXN0YXRlcy13aXRoLXNoYXJwLWRlY2xpbmUtaW4tY3JpbWUtYWdhaW5zdC13b21lbi9hcnRpY2xlc2hvdy81NDAzNzIyMS5jbXM&ntb=1" 
+                        target="_blank" class="text-blue-500 hover:underline">
+                        here
+                    </a>.
+                    <br><br>
+                    Overall, this analysis highlights both stability and areas requiring intervention, emphasizing the importance of 
+                    continual monitoring and proactive strategies to enhance women's safety.
+                </p>
+
+             </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="bg-[#f7496f] text-white mt-7 py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Mapping Women's Safety. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js">
+        
+    </script>
+    </body>
+</html>
