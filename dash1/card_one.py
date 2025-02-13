@@ -19,7 +19,7 @@ for col in year_columns:
 yearly_avg_df = pd.DataFrame(yearly_avg)
 
 # Initialize Flask app
-server = Flask(__name__, template_folder=os.path.abspath("../main_website"), static_folder="../main_website")  # Keep original configuration
+server = Flask(__name__, template_folder=os.path.abspath("../main_website"), static_folder=os.path.abspath("../main_website"))  # Keep original configuration
 
 # Serve static files explicitly from the root directory
 @server.route('/<path:filename>')
