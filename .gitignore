@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+# Node.js
+node_modules/
+
+# Tailwind CSS
+input.css
+
+# System files
+.DS_Store
