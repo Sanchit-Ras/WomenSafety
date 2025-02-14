@@ -13,8 +13,8 @@
     <!-- Header -->
     <header class="bg-[#f7496f] text-white py-6">
         <div class="container mx-auto text-center">
-            <h1 class="text-4xl font-bold mb-2 p-2">Mapping Women's Safety</h1>
-            <p class="text-medium">Data-Driven Insights for Safer Communities</p>
+            <h1 class="md:text-4xl font-bold md:mb-2 md:p-2 mb-1 p-1/2">Mapping Women's Safety</h1>
+            <p class="md:text-medium text-sm">Data-Driven Insights for Safer Communities</p>
         </div>
     </header>
     
@@ -22,10 +22,10 @@
     <nav class="bg-pink-400 py-3">
         <div class="container mx-auto">
             <ul class="flex justify-between items-center">
-                <li><a href="#home" class="text-white border-0 p-1 hover:border-pink-600 hover:border-2">Home</a></li>
-                <li><a href="#analysis" class="text-white border-0 p-1 hover:border-pink-600 hover:border-2">Analysis</a></li>
-                <li><a href="#maps" class="text-white border-0 p-1 hover:border-pink-600 hover:border-2">Maps</a></li>
-                <li><a href="#about" class="text-white border-0 p-1 hover:border-pink-600 hover:border-2">About</a></li>
+                <li><a href="#home" class="text-white border-0 p-1 hover:border-pink-600 hover:border-2 max-sm:text-[0.7rem]">Home</a></li>
+                <li><a href="#analysis" class="text-white border-0 p-1 hover:border-pink-600 hover:border-2 max-sm:text-[0.7rem]">Analysis</a></li>
+                <li><a href="#maps" class="text-white border-0 p-1 hover:border-pink-600 hover:border-2 max-sm:text-[0.7rem]">Maps</a></li>
+                <li><a href="#about" class="text-white border-0 p-1 hover:border-pink-600 hover:border-2 max-sm:text-[0.7rem]">About</a></li>
             </ul>
         </div>
     </nav>
@@ -33,17 +33,17 @@
     <!-- Main Content -->
     <div id="home" class=" py-6 px-6 w-full bg-gradient-to-r from-pink-100 via-rose-200 to-pink-100  p-6">
         <div class="bg-gradient-to-r from-pink-100 via-rose-200 to-pink-100  p-6">
-            <h2 class="text-3xl text-gray-800 font-bold mb-4 text-center bg-gradient-to-r from-green-200 via-green-300 to-green-200 py-3 border border-green-300 shadow-sm rounded-lg">
+            <h2 class="md:text-3xl text-gray-800 font-bold mb-4 text-center bg-gradient-to-r from-green-200 via-green-300 to-green-200 py-3 border border-green-300 shadow-sm rounded-lg">
                 Welcome to Mapping Women's Safety
             </h2>
-            <p class="text-md leading-relaxed font-medium text-center">
+            <p class="md:text-md text-[0.8rem] leading-relaxed font-medium text-center">
                 Explore our data-driven analysis of </p>
-            <p class="text-md leading-relaxed font-medium text-center mb-6">
+            <p class="md:text-md text-[0.8rem] leading-relaxed font-medium text-center mb-6">
                 crime trends and predict future safety zones.
             </p>
             
             <div class="flex justify-center w-full">  
-                <div class="relative w-1/2 rounded-lg overflow-hidden shadow-lg">  
+                <div class="relative md:w-1/2 w-[100%] rounded-lg overflow-hidden shadow-lg">  
                     <img 
                         src="Hero_img.png"
                         alt="Women's Safety Analysis"
@@ -51,7 +51,7 @@
                 </div>
             </div>
             <div class="mt-6 text-center">
-                <button class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg shadow-inner">
+                <button class="bg-green-600 hover:bg-green-700 text-white text-[0.8rem] py-1/2 px-1 font-bold md:py-2 md:px-4 rounded-lg shadow-inner">
                     Explore More
                 </button>
             </div>
@@ -61,23 +61,23 @@
      
     <!-- Analysis Section -->
     <div id="analysis" class="container mx-auto py-12 px-6 mb-10">
-        <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Key Insights</h2>
+        <h2 class="md:text-3xl text-lg font-bold text-gray-800 md:mb-6 mb-3 text-center">Key Insights</h2>
         <div class="relative">
             <!-- Card Wrapper -->
-            <div id="card-container" class="relative h-[650px] overflow-hidden">
+            <div id="card-container" class="relative md:h-[650px] h-[910px] overflow-hidden">
                 <!-- Card 1 -->
                 <div
                     id="card-1"
-                    class="card-content rounded-lg shadow-lg p-6 text-center absolute inset-0 transition-transform transition-opacity duration-[1200ms] transform opacity-100 translate-y-0 z-10 bg-gradient-to-r from-pink-300 to-[#FF5A7D] py-2"
+                    class="card-content rounded-lg shadow-lg md:p-6 text-center absolute inset-0 transition-transform transition-opacity duration-[1200ms] transform opacity-100 translate-y-0 z-10 bg-gradient-to-r from-pink-300 to-[#FF5A7D] py-2"
                 >
-                    <h3 class="text-xl font-bold text-white mb-4 text-center">Crime Trends (2001-2014)</h3>
+                    <h3 class="md:text-xl font-bold text-white md:mb-4 mb-2 text-center">Crime Trends (2001-2014)</h3>
     
                     <!-- Flex container for paragraph and iframe -->
-                    <div class="flex flex-col md:flex-row gap-6 items-start">
+                    <div class="flex md:flex-row flex-col gap-6 items-start">
                         <!-- Insights Section -->
-                        <div class="rounded-md shadow-sm p-6 w-full md:w-2/5 border-t-4 border-[#FF5A7D] transition-transform duration-[1200ms]">
-                            <h4 class="text-white font-bold leading-relaxed mb-1">Analysis</h4>
-                            <p class="text-white font-medium leading-relaxed">
+                        <div class="rounded-md shadow-sm md:p-6 p-3 w-full md:w-2/5 border-t-4 border-[#FF5A7D] transition-transform duration-[1200ms]">
+                            <h4 class="text-white font-bold leading-relaxed md:mb-1 max-sm:text-[0.8rem]">Analysis</h4>
+                            <p class="text-white md:font-medium text-[0.6rem] leading-relaxed">
                                 The analysis highlights a notable surge in reported crimes against women in 2013 compared to 2012.
                                 This rise coincides with the aftermath of the infamous <strong>Delhi gang rape case (December 2012)</strong>
                                 —widely known as the Nirbhaya case. The incident triggered nationwide protests, leading to significant societal and legal transformations.
@@ -107,16 +107,16 @@
                 <!-- Card 2 -->
                 <div
                     id="card-2"
-                    class="card-content rounded-lg shadow-lg p-6 text-center absolute inset-0 transition-transform transition-opacity duration-[1200ms] transform opacity-0 translate-y-full scale-95 z-0 bg-gradient-to-r from-pink-300 to-[#FF5A7D] py-2"
+                    class="card-content rounded-lg shadow-lg md:p-6 text-center absolute inset-0 transition-transform transition-opacity duration-[1200ms] transform opacity-0 translate-y-full scale-95 z-0 bg-gradient-to-r from-pink-300 to-[#FF5A7D] py-2"
                 >
-                    <h3 class="text-xl font-bold text-white mb-4 text-center">Predictions for 2015</h3>
+                    <h3 class="md:text-xl font-bold text-white md:mb-4 mb-2 text-center">Predictions for 2015</h3>
     
                     <!-- Flex container for paragraph and chart -->
                     <div class="flex flex-col md:flex-row gap-6 items-start">
                         <!-- Insights Section -->
-                        <div class="rounded-md shadow-sm p-4 w-full md:w-2/5 border-t-4 border-[#FF5A7D] transition-transform duration-[1200ms]">
-                            <h4 class="text-white font-bold leading-relaxed mb-1">Analysis</h4>
-                            <p class="text-white font-medium leading-relaxed">
+                        <div class="rounded-md shadow-sm md:p-4 p-1 w-full md:w-2/5 border-t-4 border-[#FF5A7D] transition-transform duration-[1200ms]">
+                            <h4 class="text-white font-bold leading-relaxed mb-1 max-sm:text-[0.8rem]">Analysis</h4>
+                            <p class="text-white md:font-medium text-[0.7rem] leading-relaxed">
                                 States like <strong>Mizoram, Manipur, Odisha, and Jammu & Kashmir</strong> show the highest increase in
                                 crime percentages against women in 2015 compared to 2014. This is attributed to several factors:
                                 <br /><br />
