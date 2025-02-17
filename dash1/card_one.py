@@ -5,7 +5,7 @@ import pandas as pd
 import os
 
 # Load the dataset
-data = pd.read_csv("crime_data_features_no_lag.csv")
+data = pd.read_csv("./dash1/crime_data_features_no_lag.csv")
 
 # Preprocess data
 year_columns = [col for col in data.columns if "Change in Crime Pct" in col]
@@ -41,18 +41,18 @@ dash_app = Dash(
 # Dash Layout
 dash_app.layout = html.Div(
     [
-        html.H1(
-            "Yearly Crime Percentage Trends (2001-2014)",
-            style={
-                "textAlign": "center",
-                "marginBottom": "20px",
-                "padding": "0 10px",
-                "wordWrap": "break-word", 
-                "overflow": "hidden",
-                "whiteSpace": "normal",
-                "fontSize": "20px",
-            },
-        ),
+        html.Script("""
+        document.addEventListener('DOMContentLoaded', function() {
+            const width = window.innerWidth;
+            const widthInput = document.getElementById('screen-width');
+            widthInput.value = width;
+            widthInput.dispatchEvent(new Event('change'));
+        });
+        """, type="text/javascript"),
+
+        # Hidden input field to store screen width
+        dcc.Input(id='screen-width', type='hidden', value=800),
+
         dcc.Graph(
             id="yearly-trends",
             style={"height": "500px"},
@@ -67,7 +67,7 @@ dash_app.layout = html.Div(
     Output("yearly-trends", "figure"),
     Input("yearly-trends", "clickData"),
 )
-def update_yearly_chart(_):
+def update_yearly_chart(screen_width):
     fig = px.line(
         yearly_avg_df,
         x="Year",
@@ -77,6 +77,22 @@ def update_yearly_chart(_):
         labels={"Average Crime Pct": "Average Change (%)"},
         hover_data={"Year": True, "Average Crime Pct": True},
     )
+    # Responsive layout adjustments
+    if screen_width and int(screen_width) < 640:
+        fig.update_layout(
+            title_font_size=12,
+            xaxis_title_font_size=10,
+            yaxis_title_font_size=10,
+            margin=dict(l=20, r=20, t=30, b=30),
+        )
+    else:
+        fig.update_layout(
+            title_font_size=16,
+            xaxis_title_font_size=12,
+            yaxis_title_font_size=12,
+            margin=dict(l=40, r=40, t=50, b=50),
+        )
+
     fig.update_layout(clickmode="event+select")
     return fig
 
