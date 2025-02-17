@@ -32,28 +32,33 @@
     
     <!-- Main Content -->
     <div id="home" class=" py-6 px-6 w-full bg-gradient-to-r from-pink-100 via-rose-200 to-pink-100  p-6">
-        <div class="bg-gradient-to-r from-pink-100 via-rose-200 to-pink-100  p-6">
+        <div class="bg-gradient-to-r from-pink-100 via-rose-200 to-pink-100  md:p-6 ">
             <h2 class="md:text-3xl text-gray-800 font-bold mb-4 text-center bg-gradient-to-r from-green-200 via-green-300 to-green-200 py-3 border border-green-300 shadow-sm rounded-lg">
                 Welcome to Mapping Women's Safety
             </h2>
-            <p class="md:text-md text-[0.8rem] leading-relaxed font-medium text-center">
-                Explore our data-driven analysis of </p>
-            <p class="md:text-md text-[0.8rem] leading-relaxed font-medium text-center mb-6">
-                crime trends and predict future safety zones.
-            </p>
-            
-            <div class="flex justify-center w-full">  
-                <div class="relative md:w-1/2 w-[100%] rounded-lg overflow-hidden shadow-lg">  
-                    <img 
-                        src="Hero_img.png"
-                        alt="Women's Safety Analysis"
-                        class="object-cover w-full h-full" >
-                </div>
-            </div>
-            <div class="mt-6 text-center">
-                <button class="bg-green-600 hover:bg-green-700 text-white text-[0.8rem] py-1/2 px-1 font-bold md:py-2 md:px-4 rounded-lg shadow-inner">
-                    Explore More
-                </button>
+            <div class="text-md leading-relaxed font-medium text-white bg-[#ff839e] p-4 rounded-lg shadow-lg">
+                <p class="mb-4 text-white max-sm:text-[0.8rem]">
+                    This project is all about understanding and predicting crime trends against women in India. Using data from 
+                    <a href="https://data.gov.in/" target="_blank" class="text-blue-500 hover:underline">data.gov.in</a>, I have analyzed crime data from 2001 to 2014 and even predicted crime rates for 2015. The idea is to use these insights to help raise awareness, guide decisions, and hopefully make our communities safer.
+                </p>
+                <h3 class="font-extrabold leading-relaxed text-white mb-1 max-sm:text-[0.8rem]">Why This Project Matters:</h3>
+                <p class="mb-4 text-white max-sm:text-[0.7rem]">
+                    This isn’t just about looking at the past. The methodology used here can be applied to predict future trends too. By identifying high-risk areas and understanding regional patterns, the project aims to make a real difference. It’s about empowering people and encouraging meaningful actions.
+                </p>
+                <h3 class="font-extrabold leading-relaxed text-white mb-1 max-sm:text-[0.8rem]">About the Data:</h3>
+                <p class="mb-4 text-white max-sm:text-[0.7rem]">
+                    The data comes from official crime records from 2001 to 2014 and includes categories like rape, dowry deaths, and assault. While the numbers may show an increase in crimes, it’s important to understand that part of this is due to better reporting after legal reforms in 2013. This gives us a clearer picture of what’s happening on the ground.
+                </p>
+                <h3 class="font-extrabold leading-relaxed text-white mb-1 max-sm:text-[0.8rem]">How It Works:</h3>
+                <p class="mb-4 text-white max-sm:text-[0.7rem]">
+                    The analysis is powered by a predictive model with an accuracy of <strong>99.4%</strong>. By studying patterns in the data, the model can predict changes in crime percentages. It’s not perfect—no model is—but it’s a reliable tool to understand trends and plan better for the future.
+                </p>
+                <h3 class="font-extrabold leading-relaxed text-white mb-1 max-sm:text-[0.8rem]">What This Means:</h3>
+                <p class="mb-4 text-white max-sm:text-[0.7rem]">
+                    This project isn’t just about numbers or maps. It’s about starting conversations, sparking awareness, and driving change. 
+                    I have provided the same data but in the form of my analysis and tried to write the story this data tells. 
+                    The goal is to make the data accessible and actionable for everyone—whether you’re a policymaker or someone concerned about safety in your area.
+                </p>
             </div>
         </div>
     </div>
@@ -77,7 +82,7 @@
                         <!-- Insights Section -->
                         <div class="rounded-md shadow-sm md:p-6 p-3 w-full md:w-2/5 border-t-4 border-[#FF5A7D] transition-transform duration-[1200ms]">
                             <h4 class="text-white font-bold leading-relaxed md:mb-1 max-sm:text-[0.8rem]">Analysis</h4>
-                            <p class="text-white md:font-medium max-sm:text-[0.6rem] leading-relaxed">
+                            <p class="text-white lg:font-medium max-sm:text-[0.6rem] leading-relaxed md:text-[0.7rem] lg:text-[1rem]">
                                 The analysis highlights a notable surge in reported crimes against women in 2013 compared to 2012.
                                 This rise coincides with the aftermath of the infamous <strong>Delhi gang rape case (December 2012)</strong>
                                 —widely known as the Nirbhaya case. The incident triggered nationwide protests, leading to significant societal and legal transformations.
@@ -116,7 +121,7 @@
                         <!-- Insights Section -->
                         <div class="rounded-md shadow-sm md:p-4 p-1 w-full md:w-2/5 border-t-4 border-[#FF5A7D] transition-transform duration-[1200ms]">
                             <h4 class="text-white font-bold leading-relaxed mb-1 max-sm:text-[0.8rem]">Analysis</h4>
-                            <p class="text-white md:font-medium max-sm:text-[0.7rem] leading-relaxed">
+                            <p class="text-white max-sm:text-[0.7rem] leading-relaxed md:text-[0.8rem] lg:font-medium lg:text-[1rem]">
                                 States like <strong>Mizoram, Manipur, Odisha, and Jammu & Kashmir</strong> show the highest increase in
                                 crime percentages against women in 2015 compared to 2014. This is attributed to several factors:
                                 <br /><br />
@@ -167,10 +172,10 @@
         <p class="text-gray-600 text-center mb-6 max-sm:text-[0.7rem]">Explore the maps below to see my analysis and predictions.</p>
         
         <!-- Map 1 -->
-        <div class="flex md:flex-row flex-col justify-center m-4 border-pink-700 border-2 rounded-2xl shadow-lg ">
+        <div class="flex lg:flex-row flex-col justify-center m-4 border-pink-700 border-2 rounded-2xl shadow-lg overflow-hidden ">
     
             <!-- Why Map -->
-            <div class="bg-pink-200 bg-gradient-to-r from-[#f7496f] to-pink-200 md:p-4 p-2 md:rounded-l-xl rounded-t-xl shadow-lg">
+            <div class="bg-pink-200 bg-gradient-to-r from-[#f7496f] to-pink-200 md:p-4 p-2 shadow-lg">
                 <h4 class="md:text-xl text-[0.8rem] font-bold text-white md:mb-4 mb-2 text-center">Why Use Interactive Maps?</h4>
                 <p class="text-white max-sm:text-[0.7rem] leading-relaxed ">
                     I chose interactive maps to display my analysis and predictions because they are <span class="font-semibold">simple and easy to understand</span> for normal people, even those without technical knowledge. 
@@ -183,12 +188,12 @@
             </div>
             
             <!-- Map -->
-            <div class="w-full max-sm:h-[350px]">
+            <div class="w-full max-sm:h-[350px] md:h-[400px] lg:h-[545px]">
                 <iframe src="2001_2014_map.html" class="w-full md:w-full h-full"></iframe>
             </div>
         
             <!-- What this Map tells us -->
-            <div id="analysis-section" class="bg-gradient-to-r from-pink-200 to-[#f7496f] md:p-4 p-2 md:rounded-r-xl rounded-b-xl shadow-lg">
+            <div id="analysis-section" class="bg-gradient-to-r from-pink-200 to-[#f7496f] md:p-4 p-2 shadow-lg">
                 <h4 class="md:text-xl text-[0.8rem] font-bold text-white mb-2 text-center">Analysis: 2001 vs 2014</h2>
                 <p class="text-white max-sm:text-[0.7rem] leading-relaxed">
                     This map reveals a substantial rise in reported <strong>crimes against women</strong> from <strong>2001 to 2014</strong> across numerous districts in India. While this increase might initially seem alarming, it reflects both challenges and progress. The higher crime percentages can partly be attributed to reforms introduced in <strong>2013</strong>, which encouraged more women to report offenses. Districts like <span class="font-semibold">Odisha</span>, <span class="font-semibold">Manipur</span>, and <span class="font-semibold">Jammu & Kashmir</span> highlight unique regional struggles, such as <span class="italic">socio-political unrest</span> and <span class="italic">economic vulnerabilities</span>, further influencing these numbers.
@@ -202,14 +207,14 @@
         </div>
         
         <!-- Predictions 2015 -->
-        <div class="flex md:flex-row flex-col justify-center m-4 border-pink-700 border-2 rounded-2xl shadow-lg mt-6">
+        <div class="flex md:flex-row flex-col justify-center m-4 border-pink-700 border-2 rounded-2xl shadow-lg mt-6 overflow-hidden">
             <!-- Map -->
             <div class="md:w-[50%] w-full max-sm:h-[350px]">
-                <iframe src="2015_predictions_map.html" class="w-full md:full h-full md:rounded-l-xl rounded-t-xl shadow-lg"></iframe>
+                <iframe src="2015_predictions_map.html" class="w-full md:full h-full shadow-lg"></iframe>
             </div>
 
             <!-- What this Map tells us -->
-            <div class="bg-gradient-to-r from-pink-200 to-[#f7496f] md:w-[50%] md:rounded-r-xl rounded-b-xl shadow-lg">
+            <div class="bg-gradient-to-r from-pink-200 to-[#f7496f] md:w-[50%] shadow-lg">
                 <h4 class="text-white text-center md:text-xl text-[0.8rem] font-bold leading-relaxed md:py-3 p-1">2015 Predictions: Analysis</h4>
                 <p class="md:text-sm text-[0.7rem] text-white px-4">(My prediction model is impressively accurate at 99.4% (R² = 0.994), consistently predicting percentage changes in crime based on up to 2014 data patterns.However, it may not capture unforeseen factors or events.)</p>
                 <p class="text-white leading-relaxed md:p-3 p-1 max-sm:text-[0.7rem]">

@@ -41,6 +41,18 @@ dash_app = Dash(
 # Dash Layout
 dash_app.layout = html.Div(
     [
+        html.H1(
+            "Yearly Crime Percentage Trends (2001-2014)",
+            style={
+                "textAlign": "center",
+                "marginBottom": "20px",
+                "padding": "0 10px",
+                "wordWrap": "break-word", 
+                "overflow": "hidden",
+                "whiteSpace": "normal",
+                "fontSize": "20px",
+            },
+        ),
         dcc.Graph(
             id="yearly-trends",
             style={"height": "500px"},
