@@ -80,10 +80,10 @@ def update_yearly_chart(screen_width):
     # Responsive layout adjustments
     if screen_width and int(screen_width) < 640:
         fig.update_layout(
-            title_font_size=12,
-            xaxis_title_font_size=10,
-            yaxis_title_font_size=10,
-            margin=dict(l=20, r=20, t=30, b=30),
+            title_font_size=9,
+            xaxis_title_font_size=6,
+            yaxis_title_font_size=6,
+            margin=dict(l=15, r=15, t=25, b=25),
         )
     else:
         fig.update_layout(
