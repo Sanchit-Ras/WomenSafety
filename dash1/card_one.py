@@ -5,7 +5,7 @@ import pandas as pd
 import os
 
 # Load the dataset
-data = pd.read_csv("./dash1/crime_data_features_no_lag.csv")
+data = pd.read_csv("crime_data_features_no_lag.csv")
 
 # Preprocess data
 year_columns = [col for col in data.columns if "Change in Crime Pct" in col]
