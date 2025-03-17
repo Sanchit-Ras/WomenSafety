@@ -15,3 +15,6 @@ input.css
 
 # System files
 .DS_Store
+
+#deploy yml file
+.github/workflows/deploy.yml
