@@ -1,1 +1,1 @@
-web: python card_two.py
+web: gunicorn card_two:server
